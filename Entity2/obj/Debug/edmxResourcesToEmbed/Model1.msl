@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PRAKT4ModelContainer" CdmEntityContainer="PRAKT4Entities">
+    <EntitySetMapping Name="INGREDIENTS">
+      <EntityTypeMapping TypeName="PRAKT4Model.INGREDIENTS">
+        <MappingFragment StoreEntitySet="INGREDIENTS">
+          <ScalarProperty Name="ID_INGREDIENT" ColumnName="ID_INGREDIENT" />
+          <ScalarProperty Name="NAME_INGREDIENT" ColumnName="NAME_INGREDIENT" />
+          <ScalarProperty Name="GRAMMOVKA" ColumnName="GRAMMOVKA" />
+          <ScalarProperty Name="DESCRIPTION_INGREDIENT" ColumnName="DESCRIPTION_INGREDIENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUSHI">
+      <EntityTypeMapping TypeName="PRAKT4Model.SUSHI">
+        <MappingFragment StoreEntitySet="SUSHI">
+          <ScalarProperty Name="ID_SUSHI" ColumnName="ID_SUSHI" />
+          <ScalarProperty Name="NANE_SUSHI" ColumnName="NANE_SUSHI" />
+          <ScalarProperty Name="PRICE_SUSHI" ColumnName="PRICE_SUSHI" />
+          <ScalarProperty Name="DESCRIPTION_SUSHI" ColumnName="DESCRIPTION_SUSHI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUSHI_STORE">
+      <EntityTypeMapping TypeName="PRAKT4Model.SUSHI_STORE">
+        <MappingFragment StoreEntitySet="SUSHI_STORE">
+          <ScalarProperty Name="ID_SUSHI_STORE" ColumnName="ID_SUSHI_STORE" />
+          <ScalarProperty Name="NAME_POVARA" ColumnName="NAME_POVARA" />
+          <ScalarProperty Name="COLVO_SUSHI" ColumnName="COLVO_SUSHI" />
+          <ScalarProperty Name="SUSHI_ID" ColumnName="SUSHI_ID" />
+          <ScalarProperty Name="INGREDIENT_ID" ColumnName="INGREDIENT_ID" />
+          <ScalarProperty Name="GRADE_SUSHI" ColumnName="GRADE_SUSHI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
